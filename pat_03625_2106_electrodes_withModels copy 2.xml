@@ -1,0 +1,503 @@
+<?xml version="1.0" ?>
+<EpilepsyElectrodes patientId="pat_03625_2106" numElectrodes="10">
+  
+
+  <Electrode laterality="LEFT" procedure="TPol" isMicro="False" electrodeModel="SD08R-SP05X">
+    
+
+    <TargetPoint x="-23.2" y="28.3" z="-0.3"/>
+    
+
+    <EntryPoint x="-56.5" y="28.8" z="11.0"/>
+    
+
+    <Color rgb="1 0 0"/>
+    
+
+    <Plots>
+      
+
+      <Plot x="-23.2" y="28.3" z="-0.3" number="1"/>
+      
+
+      <Plot x="-28.2" y="28.5" z="1.1" number="2"/>
+      
+
+      <Plot x="-33.0" y="28.6" z="2.4" number="3"/>
+      
+
+      <Plot x="-37.8" y="28.7" z="3.9" number="4"/>
+      
+
+      <Plot x="-42.5" y="28.7" z="5.5" number="5"/>
+      
+
+      <Plot x="-47.4" y="28.8" z="6.9" number="6"/>
+      
+
+      <Plot x="-51.8" y="29.0" z="9.0" number="7"/>
+      
+
+      <Plot x="-56.5" y="28.8" z="11.0" number="8"/>
+      
+
+    </Plots>
+    
+
+  </Electrode>
+  
+
+  <Electrode laterality="LEFT" procedure="AmT2" isMicro="True" electrodeModel="BF09R-SP61X-0BB">
+    
+
+    <TargetPoint x="-14.3" y="13.0" z="20.3"/>
+    
+
+    <EntryPoint x="-58.0" y="20.3" z="14.7"/>
+    
+
+    <Color rgb="0 1 0"/>
+    
+
+    <Plots>
+      
+
+      <Plot x="-14.3" y="13.0" z="20.3" number="1"/>
+      
+
+      <Plot x="-17.2" y="13.6" z="19.7" number="2"/>
+      
+
+      <Plot x="-23.1" y="14.5" z="18.8" number="3"/>
+      
+
+      <Plot x="-28.9" y="15.4" z="17.9" number="4"/>
+      
+
+      <Plot x="-34.7" y="16.4" z="17.2" number="5"/>
+      
+
+      <Plot x="-40.6" y="17.4" z="16.5" number="6"/>
+      
+
+      <Plot x="-46.4" y="18.4" z="15.9" number="7"/>
+      
+
+      <Plot x="-52.3" y="19.4" z="15.2" number="8"/>
+      
+
+      <Plot x="-58.0" y="20.3" z="14.7" number="9"/>
+      
+
+    </Plots>
+    
+
+  </Electrode>
+  
+
+  <Electrode laterality="LEFT" procedure="TBa" isMicro="False" electrodeModel="SD10R-SP05X">
+    
+
+    <TargetPoint x="-21.1" y="8.4" z="9.8"/>
+    
+
+    <EntryPoint x="-64.2" y="9.5" z="20.4"/>
+    
+
+    <Color rgb=".1 .1 1"/>
+    
+
+    <Plots>
+      
+
+      <Plot x="-21.1" y="8.4" z="9.8" number="1"/>
+      
+
+      <Plot x="-26.1" y="8.6" z="11.2" number="2"/>
+      
+
+      <Plot x="-30.7" y="8.8" z="12.5" number="3"/>
+      
+
+      <Plot x="-35.4" y="8.9" z="13.7" number="4"/>
+      
+
+      <Plot x="-40.3" y="9.0" z="15.0" number="5"/>
+      
+
+      <Plot x="-45.0" y="9.1" z="16.2" number="6"/>
+      
+
+      <Plot x="-49.8" y="9.1" z="17.4" number="7"/>
+      
+
+      <Plot x="-54.7" y="9.3" z="18.5" number="8"/>
+      
+
+      <Plot x="-59.3" y="9.2" z="19.3" number="9"/>
+      
+
+      <Plot x="-64.2" y="9.5" z="20.4" number="10"/>
+      
+
+    </Plots>
+    
+
+  </Electrode>
+  
+
+  <Electrode laterality="LEFT" procedure="HaT1" isMicro="True" electrodeModel="BF09R-SP61X-0BB">
+    
+
+    <TargetPoint x="-17.9" y="6.2" z="23.2"/>
+    
+
+    <EntryPoint x="-57.6" y="6.4" z="43.5"/>
+    
+
+    <Color rgb=".8 .8 0"/>
+    
+
+    <Plots>
+      
+
+      <Plot x="-17.9" y="6.2" z="23.2" number="1"/>
+      
+
+      <Plot x="-20.9" y="6.2" z="24.8" number="2"/>
+      
+
+      <Plot x="-26.1" y="5.9" z="27.1" number="3"/>
+      
+
+      <Plot x="-31.3" y="5.9" z="29.7" number="4"/>
+      
+
+      <Plot x="-36.5" y="5.9" z="32.4" number="5"/>
+      
+
+      <Plot x="-41.9" y="5.9" z="35.1" number="6"/>
+      
+
+      <Plot x="-47.1" y="6.0" z="37.8" number="7"/>
+      
+
+      <Plot x="-52.3" y="6.2" z="40.7" number="8"/>
+      
+
+      <Plot x="-57.6" y="6.4" z="43.5" number="9"/>
+      
+
+    </Plots>
+    
+
+  </Electrode>
+  
+
+  <Electrode laterality="LEFT" procedure="HpT1" isMicro="False" electrodeModel="SD12R-SP05X">
+    
+
+    <TargetPoint x="-23.1" y="-4.0" z="28.1"/>
+    
+
+    <EntryPoint x="-69.6" y="-0.3" z="56.1"/>
+    
+
+    <Color rgb="1 0 1"/>
+    
+
+    <Plots>
+      
+
+      <Plot x="-23.1" y="-4.0" z="28.1" number="1"/>
+      
+
+      <Plot x="-27.1" y="-3.7" z="30.6" number="2"/>
+      
+
+      <Plot x="-31.4" y="-3.4" z="33.4" number="3"/>
+      
+
+      <Plot x="-35.5" y="-3.0" z="35.9" number="4"/>
+      
+
+      <Plot x="-39.9" y="-2.7" z="38.5" number="5"/>
+      
+
+      <Plot x="-44.2" y="-2.3" z="41.1" number="6"/>
+      
+
+      <Plot x="-48.6" y="-1.9" z="43.6" number="7"/>
+      
+
+      <Plot x="-52.9" y="-1.6" z="46.1" number="8"/>
+      
+
+      <Plot x="-57.3" y="-1.2" z="48.7" number="9"/>
+      
+
+      <Plot x="-62.0" y="-0.8" z="51.3" number="10"/>
+      
+
+      <Plot x="-65.6" y="-0.5" z="53.7" number="11"/>
+      
+
+      <Plot x="-69.6" y="-0.3" z="56.1" number="12"/>
+      
+
+    </Plots>
+    
+
+  </Electrode>
+  
+
+  <Electrode laterality="LEFT" procedure="TBmp" isMicro="False" electrodeModel="SD10R-SP05X">
+    
+
+    <TargetPoint x="-26.4" y="-9.7" z="21.9"/>
+    
+
+    <EntryPoint x="-66.2" y="-16.7" z="40.6"/>
+    
+
+    <Color rgb="1 .5 0"/>
+    
+
+    <Plots>
+      
+
+      <Plot x="-26.4" y="-9.7" z="21.9" number="1"/>
+      
+
+      <Plot x="-30.9" y="-10.6" z="24.0" number="2"/>
+      
+
+      <Plot x="-35.4" y="-11.3" z="26.1" number="3"/>
+      
+
+      <Plot x="-39.8" y="-12.1" z="28.3" number="4"/>
+      
+
+      <Plot x="-44.2" y="-12.8" z="30.4" number="5"/>
+      
+
+      <Plot x="-48.6" y="-13.7" z="32.5" number="6"/>
+      
+
+      <Plot x="-53.1" y="-14.4" z="34.5" number="7"/>
+      
+
+      <Plot x="-57.5" y="-15.3" z="36.6" number="8"/>
+      
+
+      <Plot x="-62.4" y="-16.2" z="38.7" number="9"/>
+      
+
+      <Plot x="-66.2" y="-16.7" z="40.6" number="10"/>
+      
+
+    </Plots>
+    
+
+  </Electrode>
+  
+
+  <Electrode laterality="LEFT" procedure="SCT3" isMicro="False" electrodeModel="SD10R-SP05X">
+    
+
+    <TargetPoint x="-22.7" y="-13.7" z="28.9"/>
+    
+
+    <EntryPoint x="-65.8" y="-26.0" z="34.9"/>
+    
+
+    <Color rgb="0 .5 0"/>
+    
+
+    <Plots>
+      
+
+      <Plot x="-22.7" y="-13.7" z="28.9" number="1"/>
+      
+
+      <Plot x="-27.5" y="-15.0" z="29.6" number="2"/>
+      
+
+      <Plot x="-32.4" y="-16.5" z="30.4" number="3"/>
+      
+
+      <Plot x="-37.2" y="-17.8" z="31.0" number="4"/>
+      
+
+      <Plot x="-42.0" y="-19.3" z="31.6" number="5"/>
+      
+
+      <Plot x="-46.5" y="-20.6" z="32.2" number="6"/>
+      
+
+      <Plot x="-51.4" y="-22.0" z="32.9" number="7"/>
+      
+
+      <Plot x="-56.6" y="-23.4" z="33.6" number="8"/>
+      
+
+      <Plot x="-61.1" y="-24.9" z="34.3" number="9"/>
+      
+
+      <Plot x="-65.8" y="-26.0" z="34.9" number="10"/>
+      
+
+    </Plots>
+    
+
+  </Electrode>
+  
+
+  <Electrode laterality="LEFT" procedure="TBp" isMicro="False" electrodeModel="SD10R-SP05X">
+    
+
+    <TargetPoint x="-19.8" y="-26.8" z="46.1"/>
+    
+
+    <EntryPoint x="-62.5" y="-41.2" z="39.6"/>
+    
+
+    <Color rgb=".6 .1 1"/>
+    
+
+    <Plots>
+      
+
+      <Plot x="-19.8" y="-26.8" z="46.1" number="1"/>
+      
+
+      <Plot x="-24.5" y="-28.5" z="45.2" number="2"/>
+      
+
+      <Plot x="-29.3" y="-30.1" z="44.3" number="3"/>
+      
+
+      <Plot x="-34.0" y="-31.7" z="43.6" number="4"/>
+      
+
+      <Plot x="-38.6" y="-33.3" z="42.5" number="5"/>
+      
+
+      <Plot x="-43.5" y="-34.8" z="42.1" number="6"/>
+      
+
+      <Plot x="-48.1" y="-36.4" z="41.5" number="7"/>
+      
+
+      <Plot x="-53.0" y="-38.1" z="40.9" number="8"/>
+      
+
+      <Plot x="-57.7" y="-39.6" z="40.1" number="9"/>
+      
+
+      <Plot x="-62.5" y="-41.2" z="39.6" number="10"/>
+      
+
+    </Plots>
+    
+
+  </Electrode>
+  
+
+  <Electrode laterality="LEFT" procedure="TBpp" isMicro="False" electrodeModel="SD10R-SP05X">
+    
+
+    <TargetPoint x="-24.8" y="-30.7" z="32.9"/>
+    
+
+    <EntryPoint x="-59.2" y="-42.8" z="59.8"/>
+    
+
+    <Color rgb=".54 .27 .07"/>
+    
+
+    <Plots>
+      
+
+      <Plot x="-24.8" y="-30.7" z="32.9" number="1"/>
+      
+
+      <Plot x="-28.5" y="-32.1" z="36.0" number="2"/>
+      
+
+      <Plot x="-32.3" y="-33.4" z="39.0" number="3"/>
+      
+
+      <Plot x="-36.6" y="-34.9" z="42.2" number="4"/>
+      
+
+      <Plot x="-40.1" y="-36.1" z="45.1" number="5"/>
+      
+
+      <Plot x="-44.1" y="-37.5" z="48.1" number="6"/>
+      
+
+      <Plot x="-48.0" y="-38.9" z="51.0" number="7"/>
+      
+
+      <Plot x="-51.9" y="-40.4" z="53.8" number="8"/>
+      
+
+      <Plot x="-55.6" y="-41.5" z="56.7" number="9"/>
+      
+
+      <Plot x="-59.2" y="-42.8" z="59.8" number="10"/>
+      
+
+    </Plots>
+    
+
+  </Electrode>
+  
+
+  <Electrode laterality="LEFT" procedure="OTB" isMicro="False" electrodeModel="SD08R-SP05X">
+    
+
+    <TargetPoint x="-13.0" y="-46.3" z="34.7"/>
+    
+
+    <EntryPoint x="-46.6" y="-54.2" z="41.4"/>
+    
+
+    <Color rgb="0 .5 1"/>
+    
+
+    <Plots>
+      
+
+      <Plot x="-13.0" y="-46.3" z="34.7" number="1"/>
+      
+
+      <Plot x="-17.6" y="-47.4" z="35.6" number="2"/>
+      
+
+      <Plot x="-22.5" y="-48.5" z="36.7" number="3"/>
+      
+
+      <Plot x="-27.4" y="-49.6" z="37.7" number="4"/>
+      
+
+      <Plot x="-32.1" y="-50.8" z="38.7" number="5"/>
+      
+
+      <Plot x="-36.8" y="-51.9" z="39.7" number="6"/>
+      
+
+      <Plot x="-41.6" y="-53.0" z="40.6" number="7"/>
+      
+
+      <Plot x="-46.6" y="-54.2" z="41.4" number="8"/>
+      
+
+    </Plots>
+    
+
+  </Electrode>
+  
+
+</EpilepsyElectrodes>
