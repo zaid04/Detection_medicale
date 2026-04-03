@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EpilocView</class>
+ <widget class="QWidget" name="EpilocView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>380</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>EpiLoc View</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+
+   <!-- ═══ Section données ═══ -->
+   <item>
+    <widget class="ctkCollapsibleButton" name="dataCollapsibleButton">
+     <property name="text">
+      <string>1. Données patient</string>
+     </property>
+     <layout class="QFormLayout" name="dataFormLayout">
+
+      <item row="0" column="0">
+       <widget class="QLabel" name="ctPostLabel">
+        <property name="text"><string>CT post :</string></property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="qMRMLNodeComboBox" name="ctPostSelector">
+        <property name="nodeTypes">
+         <stringlist>
+          <string>vtkMRMLScalarVolumeNode</string>
+         </stringlist>
+        </property>
+        <property name="noneEnabled"><bool>true</bool></property>
+        <property name="addEnabled"><bool>false</bool></property>
+        <property name="removeEnabled"><bool>false</bool></property>
+        <property name="toolTip">
+         <string>CT post-opératoire avec électrodes</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="1" column="0">
+       <widget class="QLabel" name="ctPreLabel">
+        <property name="text"><string>CT pre :</string></property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="qMRMLNodeComboBox" name="ctPreSelector">
+        <property name="nodeTypes">
+         <stringlist>
+          <string>vtkMRMLScalarVolumeNode</string>
+         </stringlist>
+        </property>
+        <property name="noneEnabled"><bool>true</bool></property>
+        <property name="addEnabled"><bool>false</bool></property>
+        <property name="removeEnabled"><bool>false</bool></property>
+        <property name="toolTip">
+         <string>CT pré-opératoire sans électrodes (optionnel)</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="2" column="0">
+       <widget class="QLabel" name="patientDirLabel">
+        <property name="text"><string>Dossier patient :</string></property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="ctkPathLineEdit" name="patientDirButton">
+        <property name="filters">
+         <set>ctkPathLineEdit::Dirs</set>
+        </property>
+        <property name="toolTip">
+         <string>Dossier racine du patient (contient nifti/, reg_mat/...)</string>
+        </property>
+       </widget>
+      </item>
+
+     </layout>
+    </widget>
+   </item>
+
+   <!-- ═══ Section pipeline ═══ -->
+   <item>
+    <widget class="ctkCollapsibleButton" name="pipelineCollapsibleButton">
+     <property name="text">
+      <string>2. Localisation automatique</string>
+     </property>
+     <layout class="QFormLayout" name="pipelineFormLayout">
+
+      <item row="0" column="0">
+       <widget class="QLabel" name="srcDirLabel">
+        <property name="text"><string>Dossier src/ :</string></property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="ctkPathLineEdit" name="srcDirButton">
+        <property name="filters">
+         <set>ctkPathLineEdit::Dirs</set>
+        </property>
+        <property name="toolTip">
+         <string>Dossier src/ contenant pipeline.py, detect.py, etc.</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="1" column="0">
+       <widget class="QLabel" name="probaLabel">
+        <property name="text"><string>Seuil RF :</string></property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="ctkSliderWidget" name="probaThresholdSlider">
+        <property name="minimum"><double>0.100000000000000</double></property>
+        <property name="maximum"><double>0.900000000000000</double></property>
+        <property name="value"><double>0.400000000000000</double></property>
+        <property name="singleStep"><double>0.050000000000000</double></property>
+        <property name="toolTip">
+         <string>Seuil de probabilité Random Forest (0.4 recommandé)</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="2" column="0" colspan="2">
+       <widget class="QPushButton" name="runButton">
+        <property name="text"><string>Lancer la localisation</string></property>
+        <property name="toolTip">
+         <string>Exécute le pipeline complet de détection SEEG</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="3" column="0" colspan="2">
+       <widget class="QProgressBar" name="progressBar">
+        <property name="value"><number>0</number></property>
+        <property name="visible"><bool>false</bool></property>
+       </widget>
+      </item>
+
+      <item row="4" column="0">
+       <widget class="QLabel" name="logLabel">
+        <property name="text"><string>Log :</string></property>
+        <property name="alignment">
+         <set>Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QPlainTextEdit" name="logText">
+        <property name="readOnly"><bool>true</bool></property>
+        <property name="maximumHeight"><number>120</number></property>
+        <property name="toolTip">
+         <string>Journal d'exécution du pipeline</string>
+        </property>
+       </widget>
+      </item>
+
+     </layout>
+    </widget>
+   </item>
+
+   <!-- ═══ Section CSV ═══ -->
+   <item>
+    <widget class="ctkCollapsibleButton" name="csvCollapsibleButton">
+     <property name="text">
+      <string>3. Charger résultats CSV</string>
+     </property>
+     <property name="collapsed"><bool>true</bool></property>
+     <layout class="QFormLayout" name="csvFormLayout">
+
+      <item row="0" column="0">
+       <widget class="QLabel" name="csvPathLabel">
+        <property name="text"><string>Fichier CSV :</string></property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="ctkPathLineEdit" name="csvPathButton">
+        <property name="filters">
+         <set>ctkPathLineEdit::Files</set>
+        </property>
+        <property name="toolTip">
+         <string>Fichier CSV produit par le pipeline (electrode_id, contact_index, x, y, z)</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="1" column="0" colspan="2">
+       <widget class="QPushButton" name="loadCsvButton">
+        <property name="text"><string>Charger et afficher</string></property>
+       </widget>
+      </item>
+
+     </layout>
+    </widget>
+   </item>
+
+   <!-- ═══ Section visualisation ═══ -->
+   <item>
+    <widget class="ctkCollapsibleButton" name="vizCollapsibleButton">
+     <property name="text">
+      <string>4. Visualisation</string>
+     </property>
+     <property name="collapsed"><bool>true</bool></property>
+     <layout class="QFormLayout" name="vizFormLayout">
+
+      <item row="0" column="0">
+       <widget class="QLabel" name="pointSizeLabel">
+        <property name="text"><string>Taille points :</string></property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="ctkSliderWidget" name="pointSizeSlider">
+        <property name="minimum"><double>1.0</double></property>
+        <property name="maximum"><double>10.0</double></property>
+        <property name="value"><double>3.0</double></property>
+        <property name="singleStep"><double>0.5</double></property>
+       </widget>
+      </item>
+
+      <item row="1" column="0" colspan="2">
+       <widget class="QCheckBox" name="showLabelsCheck">
+        <property name="text"><string>Afficher les labels contacts</string></property>
+        <property name="checked"><bool>true</bool></property>
+       </widget>
+      </item>
+
+      <item row="2" column="0" colspan="2">
+       <widget class="QPushButton" name="clearButton">
+        <property name="text"><string>Effacer les markups</string></property>
+       </widget>
+      </item>
+
+     </layout>
+    </widget>
+   </item>
+
+   <!-- Spacer vertical -->
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size><width>20</width><height>40</height></size>
+     </property>
+    </spacer>
+   </item>
+
+  </layout>
+ </widget>
+
+ <!-- Widgets personnalisés Slicer/CTK -->
+ <customwidgets>
+  <customwidget>
+   <class>ctkCollapsibleButton</class>
+   <extends>QPushButton</extends>
+   <header>ctkCollapsibleButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ctkPathLineEdit</class>
+   <extends>QWidget</extends>
+   <header>ctkPathLineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ctkSliderWidget</class>
+   <extends>QWidget</extends>
+   <header>ctkSliderWidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>qMRMLNodeComboBox</class>
+   <extends>QWidget</extends>
+   <header>qMRMLNodeComboBox.h</header>
+  </customwidget>
+ </customwidgets>
+
+ <resources/>
+ <connections/>
+</ui>
