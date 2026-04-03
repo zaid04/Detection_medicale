@@ -24,3 +24,8 @@ Le pipeline comprend :
 ### Mode script
 ```bash
 python ml.py
+
+## Données
+
+Les données complètes (20 patients) ne sont pas incluses dans cette archive afin d’alléger le rendu.
+Le modèle a été entraîné et validé sur le corpus fourni dans le cadre du projet.
